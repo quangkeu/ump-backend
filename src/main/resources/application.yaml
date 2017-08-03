@@ -1,0 +1,31 @@
+server:
+  port: 8090
+  servlet-path: /
+security:
+  basic:
+    enabled: false
+spring:
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/ump?useSSL=false&useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+  redis:
+    hostName: localhost
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  jersey:
+    application-path: /api
+  mail:
+    host: mail.vnpt-technology.vn
+    port: 587
+    username: ump@vnpt-technology.vn
+    password: Ump@123
+tmpDir: /tmp/ump
+log: /tmp/log
+acsEndpoint: http://localhost:7557
+backupFileEndpoint: http://10.84.20.139:7557
+elasticSearchUrl: http://localhost:9200

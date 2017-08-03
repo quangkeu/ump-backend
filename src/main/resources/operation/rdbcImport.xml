@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdbc>
+    <group name="RBAC">
+        <operation id="API:ROLE:CREATE" name="create-role"></operation>
+        <operation id="API:ROLE:READ-ONE-ROLE" name="read-one-role"></operation>
+        <operation id="API:ROLE:READ-LIST-ROLES" name="read-list-roles"></operation>
+        <operation id="API:ROLE:UPDATE" name="update-role"></operation>
+        <operation id="API:ROLE:DELETE" name="delete-role"></operation>
+        <operation id="API:ROLE:CHECK-ROLE-NAME" name="check-role"></operation>
+        <operation id="API:ROLE:SEARCH-ROLE" name="search-role"></operation>
+        <operation id="API:PERMISSION:CREATE" name="create-permission"></operation>
+        <operation id="API:PERMISSION:READ-ONE-PERMISSION" name="read-one-permission"></operation>
+        <operation id="API:PERMISSION:READ-LIST-PERMISSIONS" name="read-list-permissions"></operation>
+        <operation id="API:PERMISSION:UPDATE" name="update-permission"></operation>
+        <operation id="API:PERMISSION:DELETE" name="delete-permission"></operation>
+        <operation id="API:PERMISSION:CHECK-GROUP-NAME" name="check-group-name"></operation>
+        <operation id="API:PERMISSION:SEARCH-PERMISSION" name="search-permission"></operation>
+        <operation id="API:OPERATION:CREATE" name="create-operation"></operation>
+        <operation id="API:OPERATION:READ-ONE-OPERATION" name="read-operation"></operation>
+        <operation id="API:OPERATION:READ-LIST-OPERATION" name="read-list-operations"></operation>
+        <operation id="API:OPERATION:UPDATE" name="update-operation"></operation>
+        <operation id="API:OPERATION:DELETE" name="delete-operation"></operation>
+    </group>
+    <group name="ALARM-SETTINGS">
+        <operation id="API:ALARM-TYPE:CREATE" name="create-alarm-type"></operation>
+        <operation id="API:ALARM-TYPE:READ-ONE-ALARM-TYPE" name="read-alarm-type"></operation>
+        <operation id="API:ALARM-TYPE:READ-LIST-ALARM-TYPES" name="read-list-alarm-types"></operation>
+        <operation id="API:ALARM-TYPE:UPDATE" name="update-alarm-type"></operation>
+        <operation id="API:ALARM-TYPE:DELETE" name="delete-alarm-type"></operation>
+        <operation id="API:ALARM-TYPE:SEARCH" name="search-alarm-type"></operation>
+        <operation id="API:ALARM-TYPE:GET-ALARM-BY-NAME" name="get-alarm-by-name"></operation>
+        <operation id="API:ALARM-TYPE:GET-ALARM-BY-PAGE" name="get-alarm-by-page"></operation>
+    </group>
+    <group name="ALARMS">
+        <operation id="API:ALARM:CREATE" name="create-alarm"></operation>
+        <operation id="API:ALARM:READ-ONE-ALARM" name="read-alarm"></operation>
+        <operation id="API:ALARM:READ-LIST-ALARMS" name="read-list-alarms"></operation>
+        <operation id="API:ALARM:UPDATE" name="update-alarm"></operation>
+        <operation id="API:ALARM:DELETE" name="delete-alarm"></operation>
+        <operation id="API:ALARM:COUNT" name="count-alarm"></operation>
+        <operation id="API:ALARM:GET-ALARM-NAME-BY-ALARM-TYPE" name="get-alarm-name-by-alarm-type"></operation>
+        <operation id="API:ALARM:SEARCH-ALARM" name="search-alarm"></operation>
+        <operation id="API:ALARM:VIEW-GRAPH-NUMBER-OF-ALARM-TYPE" name="view-graph-number-of-alarm-type"></operation>
+        <operation id="API:ALARM:VIEW-GRAPH-SEVERITY-ALARM" name="view-graph-severity-alarm"></operation>
+    </group>
+    <group name="USERS">
+        <operation id="API:USER:CREATE" name="create-user"></operation>
+        <operation id="API:USER:READ-ONE-USER" name="read-one-user"></operation>
+        <operation id="API:USER:READ-LIST-USERS" name="read-list-users"></operation>
+        <operation id="API:USER:UPDATE" name="update-user"></operation>
+        <operation id="API:USER:DELETE" name="delete-user"></operation>
+        <operation id="API:USER:CHANGE-PASSWORD" name="change-password"></operation>
+        <operation id="API:USER:CHANGE_PASSWORD-WITH-TOKEN" name="change-password-with-token"></operation>
+        <operation id="API:USER:CHECK-CURRENT-PASSWORD" name="check-current-password"></operation>
+        <operation id="API:USER:FORGOT-PASSWORD" name="forgot-password"></operation>
+        <operation id="API:USER:GET-BY-USERNAME" name="get-by-username"></operation>
+        <operation id="API:USER:GET-PAGE" name="get-user-by-page"></operation>
+        <operation id="API:USER:FORGOT-PASSWORD-WITH-EMAIL" name="forgot-password-with-email"></operation>
+        <operation id="API:USER:RESET-PASSWORD" name="reset-password"></operation>
+    </group>
+    <group name="TAGS">
+        <operation id="API:TAG:CREATE" name="create-tag"></operation>
+        <operation id="API:TAG:READ-ONE-TAG" name="read-tag"></operation>
+        <operation id="API:TAG:READ-LIST-TAG" name="read-list-tag"></operation>
+        <operation id="API:TAG:UPDATE" name="update-tag"></operation>
+        <operation id="API:TAG:DELETE" name="delete-tag"></operation>
+        <operation id="API:TAG:FIND-BY-DEVICE-TYPE-VERSION" name="find-by-device-type-version"></operation>
+        <operation id="API:TAG:FIND-SYNCHRONIZED-BY-DEVICE-TYPE-VERSION" name="find-synchronized-by-device-type-version"></operation>
+        <operation id="API:TAG:GET-LIST-ASSIGNED" name="get-list-assigned"></operation>
+        <operation id="API:TAG:GET-LIST-PROFILE-SYNCHRONIZED" name="get-list-profile-synchronized"></operation>
+        <operation id="API:TAG:GET-LIST-PROFILES" name="get-list-profiles"></operation>
+        <operation id="API:TAG:GET-LIST-PROVISIONING-TAG-BY-ROOT-TAG-ID" name="get-list-provisioning-tag-by-root-tag-id"></operation>
+        <operation id="API:TAG:GET-LIST-ROOT-TAG" name="get-list-root-tag"></operation>
+        <operation id="API:TAG:GET-PAGE-ROOT-TAG" name="get-page-root-tag"></operation>
+        <operation id="API:TAG:GET-PARAMETERS-OF-DEVICE" name="get-parameters-of-device"></operation>
+        <operation id="API:TAG:GET-PROVISIONING-TAG-BY-DEVICE-TYPE-VERSION-ID" name="get-provisioning-tag-by-device-type-version-id"></operation>
+    </group>
+    <group name="SUBSCRIBERS">
+        <operation id="API:SUBSCRIBER:CREATE" name="create-subscriber"></operation>
+        <operation id="API:SUBSCRIBER:READ-ONE-SUBSCRIBER" name="read-subscriber"></operation>
+        <operation id="API:SUBSCRIBER:READ-LIST-SUBSCRIBER" name="read-list-subscribers"></operation>
+        <operation id="API:SUBSCRIBER:UPDATE" name="update-subscriber"></operation>
+        <operation id="API:SUBSCRIBER:DELETE" name="delete-subscriber"></operation>
+        <operation id="API:SUBSCRIBER:GET-PAGE" name="get-subscriber-by-page"></operation>
+        <operation id="API:SUBSCRIBER:FIND-BY-SUBSCRIBER-ID:GET" name="find-by-subscriber-id"></operation>
+        <operation id="API:SUBSCRIBER:GET-BY-SUBSCRIBER-TEMPLATE-ID:GET" name="get-by-subscriber-template-id"></operation>
+        <operation id="API:SUBSCRIBER:CREATE-SUBSCRIBER" name="validate-and-create-subscriber"></operation>
+        <operation id="API:SUBSCRIBER-TEMPLATE:CREATE" name="create-subscriber-template"></operation>
+        <operation id="API:SUBSCRIBER-TEMPLATE:READ-ONE-SUBSCRIBER-TEMPLATE" name="read-subscriber-template"></operation>
+        <operation id="API:SUBSCRIBER-TEMPLATE:READ-LIST-SUBSCRIBER-TEMPLATE" name="read-list-subscriber-templates"></operation>
+        <operation id="API:SUBSCRIBER-TEMPLATE:UPDATE" name="update-subscriber-template"></operation>
+        <operation id="API:SUBSCRIBER-TEMPLATE:DELETE" name="delete-subscriber-template"></operation>
+        <operation id="API:SUBSCRIBER-TEMPLATE:GET-PAGE" name="get-subscriber-template-by-page"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:CREATE" name="create-subscriber-device"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:READ-ONE-SUBSCRIBER-DEVICE" name="read-subscriber-device"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:READ-LIST-SUBSCRIBER-DEVICE" name="read-list-subscriber-devices"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:UPDATE" name="update-subscriber-device"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:DELETE" name="delete-subscriber-device"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:REPLACE-CPE" name="replace-cpe"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:FIND-BY-SUBSCRIBER-ID" name="find-by-subscriber-id"></operation>
+        <operation id="API:SUBSCRIBER-DEVICE:FIND-BY-DEVICE-ID" name="find-by-device-id"></operation>
+    </group>
+    <group name="LOGS">
+        <operation id="API:DEVICE-LOG:EXPORT" name="export-device-log"></operation>
+        <operation id="API:DEVICE-LOG:GET-PAGE" name="get-device-log-by-page"></operation>
+        <operation id="API:DEVICE-LOG:SAVE-TIME-EXPIRE" name="config-logtime-expire"></operation>
+        <operation id="API:DEVICE-LOG:REMOVE-ALL" name="remove-all-device-logs"></operation>
+        <operation id="API:USER-LOG:CREATE" name="create-user-log"></operation>
+        <operation id="API:USER-LOG:READ-ONE-USER-LOG" name="read-user-log"></operation>
+        <operation id="API:USER-LOG:READ-LIST-USER-LOG" name="read-list-user-logs"></operation>
+        <operation id="API:USER-LOG:UPDATE" name="update-user-log"></operation>
+        <operation id="API:USER-LOG:DELETE" name="delete-user-log"></operation>
+        <operation id="API:USER-LOG:GET-PAGE" name="get-user-log-by-page"></operation>
+        <operation id="API:USER-LOG:REMOVE-ALL" name="remove-all-user-logs"></operation>
+    </group>
+    <group name="ACS">
+        <operation id="API:ACS:READ-LIST-DEVICES" name="read-list-devices"></operation>
+        <operation id="API:ACS:DELETE-FILE" name="delete-file"></operation>
+        <operation id="API:ACS:GET-ALL-FILES" name="get-all-files"></operation>
+        <operation id="API:ACS:GET-DEVICES" name="get-devices"></operation>
+        <operation id="API:ACS:REBOOT" name="reboot"></operation>
+        <operation id="API:ACS:ADD-OBJECT" name="add-object"></operation>
+        <operation id="API:ACS:CHECK-EXISTED" name="check-existed"></operation>
+        <operation id="API:ACS:CREATE-LABEL" name="create-label"></operation>
+        <operation id="API:ACS:DOWNLOAD-FILE" name="download-file"></operation>
+        <operation id="API:ACS:UPLOAD-FILE" name="upload-file"></operation>
+        <operation id="API:ACS:NEW-DATA-MODEL" name="new-data-model"></operation>
+        <operation id="API:ACS:REMOVE-LABEL" name="remove-label"></operation>
+        <operation id="API:ACS:DELETE-OBJECT" name="delete-object"></operation>
+        <operation id="API:ACS:FACTORY-RESET" name="factory-reset"></operation>
+        <operation id="API:ACS:RECHECK-STATUS" name="recheck-status"></operation>
+        <operation id="API:ACS:REFRESH-OBJECT" name="refresh-object"></operation>
+        <operation id="API:ACS:DELETE-DEVICE" name="delete-device"></operation>
+        <operation id="API:ACS:NEW-DEVICE-REGISTERED" name="new-device-registered"></operation>
+        <operation id="API:ACS:GET-PARAMETER-VALUES" name="get-parameter-values"></operation>
+        <operation id="API:ACS:SET-PARAMETER-VALUES" name="set-parameter-values"></operation>
+        <operation id="API:RPC:DOWNLOAD-FILE" name="download-file"></operation>
+        <operation id="API:RPC:GET-PARAMETER-NAMES" name="get-parameter-names"></operation>
+        <operation id="API:RPC:REBOOT" name="reboots"></operation>
+        <operation id="API:RPC:UPLOAD-FILE" name="upload-file"></operation>
+        <operation id="API:DIAGNOSTIC:CREATE-NEW" name="create-diagnostic-task"></operation>
+        <operation id="API:DIAGNOSTIC:GET-ALL-TASK" name="get-all-diagnostic-tasks"></operation>
+        <operation id="API:DIAGNOSTIC:LIST-DIAGNOSTICS" name="get-list-diagnostic-tasks"></operation>
+        <operation id="API:DIAGNOSTIC:GET-INTERFACE-LIST" name="get-list-interfaces"></operation>
+        <operation id="API:BLACKLIST-DEVICE:CREATE" name="create-black-list"></operation>
+        <operation id="API:BLACKLIST-DEVICE:READ-ONE-BLACKLIST-DEVICE" name="read-blacklist-device"></operation>
+        <operation id="API:BLACKLIST-DEVICE:READ-LIST-BLACKLIST-DEVICE" name="read-list-blacklist-devices"></operation>
+        <operation id="API:BLACKLIST-DEVICE:UPDATE" name="update-blacklist-device"></operation>
+        <operation id="API:BLACKLIST-DEVICE:DELETE" name="delete-blacklist-device"></operation>
+        <operation id="API:DEVICE-GROUP:CREATE" name="create-device-group"></operation>
+        <operation id="API:DEVICE-GROUP:READ-ONE-DEVICE-GROUP" name="read-device-group"></operation>
+        <operation id="API:DEVICE-GROUP:READ-LIST-DEVICE-GROUPS" name="read-list-device-groups"></operation>
+        <operation id="API:DEVICE-GROUP:UPDATE" name="update-device-group"></operation>
+        <operation id="API:DEVICE-GROUP:DELETE" name="delete-device-group"></operation>
+        <operation id="API:DEVICE-GROUP:FIND-BY-NAME:GET" name="find-by-name"></operation>
+        <operation id="API:DEVICE-GROUP:FIND-BY-PAGE:GET" name="find-by-page"></operation>
+    </group>
+    <group name="DATA-MODEL">
+        <operation id="API:DEVICE-TYPE-VERSION:CREATE" name="create-data-model"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:READ-ONE-DEVICE-TYPE-VERSION" name="read-data-model"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:READ-LIST-DEVICE-TYPE-VERSIONS" name="read-list-data-models"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:UPDATE" name="update-data-model"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:DELETE" name="delete-data-model"></operation>
+        <operation id="API:DATA-MODEL:EXPORT-JSON" name="export-json-data-model"></operation>
+        <operation id="API:DATA-MODEL:EXPORT" name="export-xml-data-model"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:PREV" name="get-prev-device-type-version"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:TAGS" name="get-all-not-assigned-tags"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:ASSIGNED-TAGS" name="get-all-assigned-tags"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:ASSIGN-TAGS" name="assign-tags"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:GET-PAGE" name="get-device-type-version-by-page"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:FIND-BY-PK" name="find-by-pk"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:FIND-BY-DEVICE" name="find-by-device"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:SEARCH-DEVICES" name="search-devices"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:FIND-ALL-DEVICE-TYPE-ID" name="find-all-device-type-id"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:FIND-BY-FIRMWARE-VERSION" name="find-by-firmware-version"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:FIND-BY-MANUFACTURER-AND-MODELNAME" name="find-by-manufacturer-and-modelname"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:GET-DEVICE-TYPE-ID-FOR-SORT-AND-SEARCH" name="get-device-type-id-for-sort-and-search"></operation>
+        <operation id="API:DEVICE-TYPE-VERSION:COUNT-DEVICE-TYPE-ID-FOR-SORT-AND-SEARCH" name="count-device-type-id-for-sort-and-search"></operation>
+        <operation id="API:DEVICE-TYPE:CREATE" name="create-device-type"></operation>
+        <operation id="API:DEVICE-TYPE:READ-ONE-DEVICE-TYPE-VERSION" name="read-device-type"></operation>
+        <operation id="API:DEVICE-TYPE:READ-LIST-DEVICE-TYPE-VERSIONS" name="read-list-device-types"></operation>
+        <operation id="API:DEVICE-TYPE:UPDATE" name="update-device-type"></operation>
+        <operation id="API:DEVICE-TYPE:DELETE" name="delete-device-type"></operation>
+        <operation id="API:DEVICE-TYPE:VERSIONS" name="get-all-firmware-versions"></operation>
+        <operation id="API:DEVICE-TYPE:FIND-BY-PK" name="find-by-pk"></operation>
+        <operation id="API:DEVICE-TYPE:IS-EXISTED" name="is-existed"></operation>
+        <operation id="API:DEVICE-TYPE:FIND-BY-MANUFACTURER-AND-MODELNAME" name="find-by-manufacturer-and-modelname"></operation>
+        <operation id="API:PARAMETER-DETAIL:CREATE" name="create-parameter-detail"></operation>
+        <operation id="API:PARAMETER-DETAIL:READ-ONE-PARAMETER-DETAIL" name="read-parameter-detail"></operation>
+        <operation id="API:PARAMETER-DETAIL:READ-LIST-PARAMETER-DETAILS" name="read-list-parameter-details"></operation>
+        <operation id="API:PARAMETER-DETAIL:UPDATE" name="update-parameter-detail"></operation>
+        <operation id="API:PARAMETER-DETAIL:DELETE" name="delete-parameter-detail"></operation>
+        <operation id="API:PARAMETER-DETAIL:FIND-BY-POLICY-VERSION" name="find-by-device-type-version"></operation>
+        <operation id="API:PARAMETER-DETAIL:FIND-BY-PARAMS" name="find-by-params"></operation>
+        <operation id="API:PARAMETER-DETAIL:FIND-BY-TR069-NAME" name="find-by-tr069-name"></operation>
+        <operation id="API:PARAMETER-DETAIL:FIND-PARAMETERS" name="find-parameters"></operation>
+    </group>
+    <group name="FILES">
+        <operation id="API:FILE:DELETE-FILE" name="delete-file"></operation>
+        <operation id="API:FILE:SEARCH-FILE" name="search-file"></operation>
+        <operation id="API:FILE:UPDATE-FILE" name="update-file"></operation>
+        <operation id="API:FILE:CREATE-FILE" name="update-file"></operation>
+        <operation id="API:FILE:CHECK-BY-VERSION" name="check-by-version"></operation>
+    </group>
+    <group name="POLICY">
+        <operation id="API:POLICY:CREATE" name="create-policy-job"></operation>
+        <operation id="API:POLICY:READ-ONE-POLICY" name="read-policy-job"></operation>
+        <operation id="API:POLICY:READ-LIST-POLICIES" name="read-list-policy-jobs"></operation>
+        <operation id="API:POLICY:UPDATE" name="update-policy-job"></operation>
+        <operation id="API:POLICY:DELETE" name="delete-policy-job"></operation>
+        <operation id="API:POLICY:STOP" name="stop"></operation>
+        <operation id="API:POLICY:EXCUTE" name="excute"></operation>
+        <operation id="API:POLICY:GET-PAGE" name="get-policy-jobs-by-page"></operation>
+        <operation id="API:POLICY:GET-PAGE-WITH-NUMBER-OF-EXCUTION" name="get-policy-jobs-with-number-of-excution-by-page"></operation>
+        <operation id="API:POLICY:CHECK-JOB-BY-GROUP" name="check-policy-job-by-group"></operation>
+        <operation id="API:POLICY-TASK:CREATE" name="create-policy-task"></operation>
+        <operation id="API:POLICY-TASK:READ-ONE-POLICY" name="read-policy-task"></operation>
+        <operation id="API:POLICY-TASK:READ-LIST-POLICIES" name="read-list-policy-tasks"></operation>
+        <operation id="API:POLICY-TASK:UPDATE" name="update-policy-job"></operation>
+        <operation id="API:POLICY-TASK:DELETE" name="delete-policy-job"></operation>
+        <operation id="API:POLICY-TASK:COUNT" name="count"></operation>
+        <operation id="API:POLICY-TASK:GET-PAGE" name="get-policy-task-by-page"></operation>
+        <operation id="API:POLICY-TASK:GROUP-BY-STATUS" name="group-by-status"></operation>
+        <operation id="API:POLICY-TASK:FIND-BY-TASK-ID" name="group-by-status"></operation>
+    </group>
+</rdbc>

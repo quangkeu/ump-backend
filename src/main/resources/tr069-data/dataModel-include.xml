@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tr069Import>
+    <root>
+        <dataModel name="InternetGatewayDevice">
+            <include path="tr069-data/tr-098-1-8-full.xml" name="tr-098-1-8-full.xml" version="1-8-0"/>
+        </dataModel>
+        <dataModel name="Device:1">
+            <include path="tr069-data/tr-181-1-7-0-full.xml" name="tr-098-1-8-full.xml" version="1-8-0"/>
+        </dataModel>
+        <dataModel name="Device:2">
+            <include path="tr069-data/tr-181-2-11-0-full.xml" name="tr-098-1-8-full.xml" version="1-8-0"/>
+        </dataModel>
+    </root>
+    <servicedatamodel>
+        <dataModel name="VoiceService">
+            <include path="tr069-data/tr-104-2-0-0-full.xml" name="tr-104-2-0-0-full.xml" version="2-0-0"/>
+        </dataModel>
+        <dataModel name="STBService">
+            <include path="tr069-data/tr-135-1-4-full.xml" name="tr-104-2-0-0-full.xml" version="2-0-0"/>
+        </dataModel>
+        <dataModel name="StorageService">
+            <include path="tr069-data/tr-140-1-2-0-full.xml" name="tr-104-2-0-0-full.xml" version="2-0-0"/>
+        </dataModel>
+    </servicedatamodel>
+</tr069Import>
