@@ -245,17 +245,17 @@
   <repositories>
     <repository>
       <id>maven-group</id>
-      <url>http://10.84.20.62:8081/repository/maven-group/</url>
+      <url>http://${NEXUS_SERVER}:8081/repository/maven-group/</url>
     </repository>
   </repositories>
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://10.84.20.62:8081/repository/maven-snapshots/</url>
+      <url>http://${NEXUS_SERVER}:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://10.84.20.62:8081/repository/maven-releases/</url>
+      <url>http://${NEXUS_SERVER}:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
 	
